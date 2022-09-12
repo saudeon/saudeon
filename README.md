@@ -2,7 +2,12 @@
 import Foundation
 
 enum Position: String {
-  case junior, intermediate, senior, staff
+  case senior, staff
+}
+
+struct Project {
+  let name: String
+  let url: String
 }
 
 struct Engineer {
@@ -24,11 +29,6 @@ struct Engineer {
     self.projects = projects
   }
 
-}
-
-struct Project {
-  let name: String
-  let url: String
 }
 
 let me = Engineer(
