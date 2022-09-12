@@ -1,37 +1,41 @@
 ```swift
 import Foundation
 
-enum Position {
+enum Position: String {
   case junior, intermediate, senior, staff
 }
 
 struct Engineer {
   let name: String
-  let position: Position
+  let nationality: String
   let location: String
-  let personalProjects: [Project]?
-  
-  init(_ name: String, 
-       position: Position, 
-       location: String, 
+  let position: Position
+  let projects: [Project]?
+
+  init(_ name: String,
+       nationality: String,
+       location: String,
+       position: Position,
        projects: [Project]? = nil) {
     self.name = name
     self.position = position
     self.location = location
-    self.personalProjects = projects
+    self.nationality = nationality
+    self.projects = projects
   }
-  
+
 }
 
 struct Project {
   let name: String
-  let url: String 
+  let url: String
 }
 
 let me = Engineer(
-  "Sebastien Audeon", 
-  positon: .staff,
-  location: "Los Angeles"
+  "Sebastien Audeon",
+  nationality: "🇦🇺",
+  location: "Los Angeles",
+  position: .staff
 )
 ```
 
