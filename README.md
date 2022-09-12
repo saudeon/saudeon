@@ -16,17 +16,20 @@ struct Engineer {
   let location: String
   let position: Position
   let projects: [Project]?
+  let openToWork: Bool
 
   init(_ name: String,
        nationality: String,
        location: String,
        position: Position,
-       projects: [Project]? = nil) {
+       projects: [Project]? = nil,
+       openToWork: Bool) {
     self.name = name
     self.position = position
     self.location = location
     self.nationality = nationality
     self.projects = projects
+    self.openToWork = openToWork
   }
 
 }
@@ -35,7 +38,8 @@ let me = Engineer(
   "Sebastien Audeon",
   nationality: "🇦🇺",
   location: "Los Angeles",
-  position: .staff
+  position: .staff,
+  openToWork: true
 )
 ```
 
