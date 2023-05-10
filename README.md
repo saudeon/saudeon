@@ -39,7 +39,7 @@ let me = Engineer(
   nationality: "🇦🇺",
   location: "Los Angeles",
   position: .staff,
-  openToWork: false
+  openToWork: true
 )
 ```
 
