@@ -39,7 +39,12 @@ let me = Engineer(
   nationality: "🇦🇺",
   location: "Los Angeles",
   position: .staff,
-  openToWork: true
+  projects: [
+    .init(name: "L\'Audeon", url: "https://laudeon.co"),
+    .init(name: "Gluvbox", url: "https://gluvbox.io"),
+    .init(name: "Biomorphik", url: "https://biomorphik.com"),
+  ]
+  openToWork: false
 )
 ```
 
